@@ -5,8 +5,25 @@ import { Menu, X } from "lucide-react";
 import { useRouter, usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { WaveButton } from "@/components/Hero";
+import { DEFAULT_SITE, type PublicLink } from "@/lib/publicDefaults";
 
-export default function Navbar() {
+type NavItem =
+    | { label: string; action: "route" | "link"; href: string }
+    | { label: string; action: "scroll"; id: string };
+
+type NavbarProps = {
+    brandName?: string;
+    navigation?: PublicLink[];
+    orderLabel?: string;
+    orderUrl?: string;
+};
+
+export default function Navbar({
+    brandName = DEFAULT_SITE.brandName,
+    navigation = DEFAULT_SITE.navigation,
+    orderLabel = DEFAULT_SITE.orderLabel,
+    orderUrl = DEFAULT_SITE.orderUrl,
+}: NavbarProps) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const router = useRouter();
@@ -20,15 +37,19 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const navItems = [
-        { label: "Menu", action: "route", href: "/menu" },
-        { label: "Shop", action: "link", href: "https://suukr.myshopify.com/collections/all" },
-        { label: "Best Sellers", action: "scroll", id: "best-sellers" },
-        { label: "E-Gift", action: "link", href: "https://suukr.myshopify.com/products/suukr-gift-card" },
-        { label: "Contact Us", action: "scroll", id: "contact-us" },
-    ];
+    const navItems: NavItem[] = navigation.map((item) => {
+        if (item.url.startsWith("/#")) {
+            return { label: item.label, action: "scroll", id: item.url.replace("/#", "") };
+        }
 
-    const handleNavClick = (item: any) => {
+        if (item.url.startsWith("/")) {
+            return { label: item.label, action: "route", href: item.url };
+        }
+
+        return { label: item.label, action: "link", href: item.url };
+    });
+
+    const handleNavClick = (item: NavItem) => {
         setIsMenuOpen(false);
         if (item.action === "route") {
             router.push(item.href);
@@ -57,7 +78,7 @@ export default function Navbar() {
                             onClick={() => router.push('/')}
                             className="text-[#D5AF34] font-heading font-bold text-2xl sm:text-3xl lg:text-4xl tracking-widest cursor-pointer hover:opacity-80 hover:scale-105 transition-all"
                         >
-                            SUÜKR
+                            {brandName}
                         </button>
 
                         {/* Desktop Links */}
@@ -79,11 +100,11 @@ export default function Navbar() {
                         <div className="flex items-center gap-3">
                             {/* Desktop CTA */}
                             <WaveButton
-                                onClick={() => handleNavClick({ action: "link", href: "https://suukr.myshopify.com/" })}
+                                onClick={() => handleNavClick({ label: orderLabel, action: "link", href: orderUrl })}
                                 color="#D5AF34"
                                 waveColor="#8a6a00"
                                 textColor="#fff"
-                                label="Order Now"
+                                label={orderLabel}
                                 className="hidden sm:block px-4 sm:px-6 py-2 text-sm sm:text-base"
                             />
 
@@ -134,7 +155,7 @@ export default function Navbar() {
                                         }}
                                         className="text-[#D5AF34] font-heading font-bold text-3xl tracking-widest cursor-pointer hover:opacity-80 hover:scale-105 transition-all text-left"
                                     >
-                                        SUÜKR
+                                        {brandName}
                                     </button>
                                     <button
                                         onClick={() => setIsMenuOpen(false)}
@@ -164,11 +185,11 @@ export default function Navbar() {
                                 {/* Mobile CTA */}
                                 <div className="p-6 border-t border-gray-100">
                                     <WaveButton
-                                        onClick={() => handleNavClick({ action: "link", href: "https://suukr.myshopify.com/" })}
+                                        onClick={() => handleNavClick({ label: orderLabel, action: "link", href: orderUrl })}
                                         color="#D5AF34"
                                         waveColor="#8a6a00"
                                         textColor="#fff"
-                                        label="Order Now"
+                                        label={orderLabel}
                                         className="w-full px-6 py-4 text-lg"
                                     />
                                 </div>

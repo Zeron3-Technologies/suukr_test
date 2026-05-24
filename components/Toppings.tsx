@@ -105,10 +105,10 @@ function ToppingBowl({
                     }`}
                 style={{
                     background: `radial-gradient(circle at 35% 35%, ${topping.color}22, ${topping.color}55)`,
-                    ringColor: active ? topping.color : undefined,
+                    borderColor: active ? topping.color : `${topping.color}44`,
                     boxShadow: active ? `0 0 0 3px ${topping.color}88, 0 8px 24px ${topping.color}44` : undefined,
                     backgroundColor: `${topping.color}18`,
-                    border: `2px solid ${topping.color}44`,
+                    border: "2px solid",
                 }}
             >
                 <span role="img" aria-label={topping.name}>{topping.emoji}</span>

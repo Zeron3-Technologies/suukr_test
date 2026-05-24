@@ -1,0 +1,450 @@
+{
+  "/images/choco.jpg": {
+    "publicId": "suukr/site-assets/choco",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778276/suukr/site-assets/choco.jpg",
+    "width": 640,
+    "height": 640,
+    "format": "jpg",
+    "bytes": 57210
+  },
+  "/images/coldbrew.jpg": {
+    "publicId": "suukr/site-assets/coldbrew",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778277/suukr/site-assets/coldbrew.jpg",
+    "width": 640,
+    "height": 640,
+    "format": "jpg",
+    "bytes": 53016
+  },
+  "/images/dessert_pattern.png": {
+    "publicId": "suukr/site-assets/dessert-pattern",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778278/suukr/site-assets/dessert-pattern.jpg",
+    "width": 640,
+    "height": 640,
+    "format": "jpg",
+    "bytes": 76801
+  },
+  "/images/DSC08136.jpg": {
+    "publicId": "suukr/site-assets/dsc08136",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778777615/suukr/site-assets/dsc08136.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 1984505
+  },
+  "/images/DSC08200.jpg": {
+    "publicId": "suukr/site-assets/dsc08200",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778777655/suukr/site-assets/dsc08200.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 3330544
+  },
+  "/images/DSC08238.jpg": {
+    "publicId": "suukr/site-assets/dsc08238",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778777720/suukr/site-assets/dsc08238.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 3485684
+  },
+  "/images/DSC08458.jpg": {
+    "publicId": "suukr/site-assets/dsc08458",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778777779/suukr/site-assets/dsc08458.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 3420661
+  },
+  "/images/DSC08527.jpg": {
+    "publicId": "suukr/site-assets/dsc08527",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778777832/suukr/site-assets/dsc08527.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 2936287
+  },
+  "/images/hand_pointing.png": {
+    "publicId": "suukr/site-assets/hand-pointing",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778298/suukr/site-assets/hand-pointing.jpg",
+    "width": 1024,
+    "height": 1024,
+    "format": "jpg",
+    "bytes": 366758
+  },
+  "/images/iphone_mockup2.png": {
+    "publicId": "suukr/site-assets/iphone-mockup2",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778280/suukr/site-assets/iphone-mockup2.png",
+    "width": 640,
+    "height": 640,
+    "format": "png",
+    "bytes": 92473
+  },
+  "/images/mango_froyo.png": {
+    "publicId": "suukr/site-assets/mango-froyo",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778335/suukr/site-assets/mango-froyo.png",
+    "width": 3294,
+    "height": 1312,
+    "format": "png",
+    "bytes": 1645771
+  },
+  "/images/map_image.png": {
+    "publicId": "suukr/site-assets/map-image",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778296/suukr/site-assets/map-image.jpg",
+    "width": 640,
+    "height": 640,
+    "format": "jpg",
+    "bytes": 79813
+  },
+  "/images/menu/Almond Maple Cold Brew.jpg": {
+    "publicId": "suukr/site-assets/menu/almond-maple-cold-brew",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778376/suukr/site-assets/menu/almond-maple-cold-brew.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 4256459
+  },
+  "/images/menu/Berry Boost.jpg": {
+    "publicId": "suukr/site-assets/menu/berry-boost",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778382/suukr/site-assets/menu/berry-boost.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 2684446
+  },
+  "/images/menu/Blue Spirulina Protein Shake.jpg": {
+    "publicId": "suukr/site-assets/menu/blue-spirulina-protein-shake",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778533/suukr/site-assets/menu/blue-spirulina-protein-shake.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 5076630
+  },
+  "/images/menu/Cold Brew.jpg": {
+    "publicId": "suukr/site-assets/menu/cold-brew",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778399/suukr/site-assets/menu/cold-brew.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 2703927
+  },
+  "/images/menu/Cookie Monster Swirl.jpg": {
+    "publicId": "suukr/site-assets/menu/cookie-monster-swirl",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778520/suukr/site-assets/menu/cookie-monster-swirl.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 3420661
+  },
+  "/images/menu/Cookie Monster.jpg": {
+    "publicId": "suukr/site-assets/menu/cookie-monster",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778480/suukr/site-assets/menu/cookie-monster.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 3331069
+  },
+  "/images/menu/Golden Gaytime.jpg": {
+    "publicId": "suukr/site-assets/menu/golden-gaytime",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778529/suukr/site-assets/menu/golden-gaytime.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 2363434
+  },
+  "/images/menu/Italian Hot Chocolate.jpg": {
+    "publicId": "suukr/site-assets/menu/italian-hot-chocolate",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778591/suukr/site-assets/menu/italian-hot-chocolate.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 3485684
+  },
+  "/images/menu/Knafeh - Pistachio.jpg": {
+    "publicId": "suukr/site-assets/menu/knafeh-pistachio",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778620/suukr/site-assets/menu/knafeh-pistachio.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 4509229
+  },
+  "/images/menu/Mont Blanc.jpg": {
+    "publicId": "suukr/site-assets/menu/mont-blanc",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778701/suukr/site-assets/menu/mont-blanc.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 4103974
+  },
+  "/images/menu/Nitro Cold Brew.jpg": {
+    "publicId": "suukr/site-assets/menu/nitro-cold-brew",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778640/suukr/site-assets/menu/nitro-cold-brew.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 2440879
+  },
+  "/images/menu/no-image.png": {
+    "publicId": "suukr/site-assets/menu/no-image",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778702/suukr/site-assets/menu/no-image.png",
+    "width": 1280,
+    "height": 822,
+    "format": "png",
+    "bytes": 15421
+  },
+  "/images/menu/Oat & Vanilla Cold Brew.jpg": {
+    "publicId": "suukr/site-assets/menu/oat-and-vanilla-cold-brew",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778741/suukr/site-assets/menu/oat-and-vanilla-cold-brew.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 4179589
+  },
+  "/images/menu/Pistachio Silk.jpg": {
+    "publicId": "suukr/site-assets/menu/pistachio-silk",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778656/suukr/site-assets/menu/pistachio-silk.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 2852097
+  },
+  "/images/menu/Purple Power.jpg": {
+    "publicId": "suukr/site-assets/menu/purple-power",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778739/suukr/site-assets/menu/purple-power.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 2902345
+  },
+  "/images/menu/Spanish Latte.jpg": {
+    "publicId": "suukr/site-assets/menu/spanish-latte",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778709/suukr/site-assets/menu/spanish-latte.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 1940784
+  },
+  "/images/menu/Strawberry & Cream Waffle.jpg": {
+    "publicId": "suukr/site-assets/menu/strawberry-and-cream-waffle",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778693/suukr/site-assets/menu/strawberry-and-cream-waffle.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 1304626
+  },
+  "/images/menu/Tiramisu Cold Brew.jpg": {
+    "publicId": "suukr/site-assets/menu/tiramisu-cold-brew",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778765/suukr/site-assets/menu/tiramisu-cold-brew.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 3191466
+  },
+  "/images/menu/Tropical Sky.jpg": {
+    "publicId": "suukr/site-assets/menu/tropical-sky",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778764/suukr/site-assets/menu/tropical-sky.jpg",
+    "width": 4200,
+    "height": 2800,
+    "format": "jpg",
+    "bytes": 2454260
+  },
+  "/images/milkshake.jpg": {
+    "publicId": "suukr/site-assets/milkshake",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778703/suukr/site-assets/milkshake.jpg",
+    "width": 640,
+    "height": 640,
+    "format": "jpg",
+    "bytes": 60099
+  },
+  "/images/mocha_character.png": {
+    "publicId": "suukr/site-assets/mocha-character",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778707/suukr/site-assets/mocha-character.png",
+    "width": 232,
+    "height": 254,
+    "format": "png",
+    "bytes": 86653
+  },
+  "/images/pointing-hand.png": {
+    "publicId": "suukr/site-assets/pointing-hand",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778709/suukr/site-assets/pointing-hand.png",
+    "width": 500,
+    "height": 500,
+    "format": "png",
+    "bytes": 70157
+  },
+  "/images/satellite_map.jpg": {
+    "publicId": "suukr/site-assets/satellite-map",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778728/suukr/site-assets/satellite-map.jpg",
+    "width": 1024,
+    "height": 775,
+    "format": "jpg",
+    "bytes": 574238
+  },
+  "/images/softserve.png": {
+    "publicId": "suukr/site-assets/softserve",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778898/suukr/site-assets/softserve.png",
+    "width": 2240,
+    "height": 1423,
+    "format": "png",
+    "bytes": 4159456
+  },
+  "/images/strawberry_froyo.png": {
+    "publicId": "suukr/site-assets/strawberry-froyo",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778794/suukr/site-assets/strawberry-froyo.png",
+    "width": 3294,
+    "height": 1312,
+    "format": "png",
+    "bytes": 1698846
+  },
+  "/images/SUUKR_biscoff white chocolate waffle_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-biscoff-white-chocolate-waffle-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778777855/suukr/site-assets/suukr-biscoff-white-chocolate-waffle-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2245908
+  },
+  "/images/SUUKR_blue cookie monster shake_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-blue-cookie-monster-shake-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778109/suukr/site-assets/suukr-blue-cookie-monster-shake-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2440528
+  },
+  "/images/SUUKR_hero_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-hero-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778187/suukr/site-assets/suukr-hero-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2760485
+  },
+  "/images/SUUKR_italian hot chocolate_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-italian-hot-chocolate-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778106/suukr/site-assets/suukr-italian-hot-chocolate-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2421043
+  },
+  "/images/SUUKR_kanafeh chocolate_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-kanafeh-chocolate-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778132/suukr/site-assets/suukr-kanafeh-chocolate-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2241303
+  },
+  "/images/SUUKR_kanafeh classic_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-kanafeh-classic-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778058/suukr/site-assets/suukr-kanafeh-classic-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2315296
+  },
+  "/images/SUUKR_kanafeh pistachio_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-kanafeh-pistachio-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778193/suukr/site-assets/suukr-kanafeh-pistachio-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2256990
+  },
+  "/images/SUUKR_maltease shake_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-maltease-shake-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778213/suukr/site-assets/suukr-maltease-shake-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2172858
+  },
+  "/images/SUUKR_pistachio crunch waffle_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-pistachio-crunch-waffle-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778239/suukr/site-assets/suukr-pistachio-crunch-waffle-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2294889
+  },
+  "/images/SUUKR_pistachio silk shake_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-pistachio-silk-shake-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778243/suukr/site-assets/suukr-pistachio-silk-shake-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2271907
+  },
+  "/images/SUUKR_straberry rose matcha_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-straberry-rose-matcha-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778277/suukr/site-assets/suukr-straberry-rose-matcha-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2110199
+  },
+  "/images/SUUKR_straberry with cream waffle_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-straberry-with-cream-waffle-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778273/suukr/site-assets/suukr-straberry-with-cream-waffle-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2412876
+  },
+  "/images/SUUKR_tiramisu cold foam cold brew_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-tiramisu-cold-foam-cold-brew-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778293/suukr/site-assets/suukr-tiramisu-cold-foam-cold-brew-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 1918046
+  },
+  "/images/SUUKR_tripple chocolate waffle_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-tripple-chocolate-waffle-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778314/suukr/site-assets/suukr-tripple-chocolate-waffle-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2271693
+  },
+  "/images/SUUKR_vanilla cold foam cold brew_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-vanilla-cold-foam-cold-brew-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778318/suukr/site-assets/suukr-vanilla-cold-foam-cold-brew-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 1876794
+  },
+  "/images/SUUKR_vanilla shake_2880x2304.jpg": {
+    "publicId": "suukr/site-assets/suukr-vanilla-shake-2880x2304",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778344/suukr/site-assets/suukr-vanilla-shake-2880x2304.jpg",
+    "width": 2880,
+    "height": 2304,
+    "format": "jpg",
+    "bytes": 2299422
+  },
+  "/images/vanilla_froyo.png": {
+    "publicId": "suukr/site-assets/vanilla-froyo",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778830/suukr/site-assets/vanilla-froyo.png",
+    "width": 3294,
+    "height": 1312,
+    "format": "png",
+    "bytes": 1557245
+  },
+  "/images/waffles.jpg": {
+    "publicId": "suukr/site-assets/waffles",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778743/suukr/site-assets/waffles.jpg",
+    "width": 640,
+    "height": 640,
+    "format": "jpg",
+    "bytes": 68185
+  },
+  "/images/yogurt.jpg": {
+    "publicId": "suukr/site-assets/yogurt",
+    "secureUrl": "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778747/suukr/site-assets/yogurt.jpg",
+    "width": 640,
+    "height": 640,
+    "format": "jpg",
+    "bytes": 75026
+  }
+}

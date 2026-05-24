@@ -1,0 +1,92 @@
+/* Keep Payload admin readable against Suukr's pale brand surface. */
+:root,
+html[data-theme='light'],
+html[data-theme='dark'] {
+  --theme-bg: #fff8f8;
+  --theme-input-bg: #ffffff;
+  --theme-text: #2a0f10;
+  --theme-text-light: #4b2a2a;
+  --theme-elevation-0: #fff8f8;
+  --theme-elevation-50: #fff1f1;
+  --theme-elevation-100: #f5dddd;
+  --theme-elevation-150: #e8caca;
+  --theme-elevation-200: #dbb5b5;
+  --theme-elevation-250: #c99f9f;
+  --theme-elevation-300: #b78787;
+  --theme-elevation-400: #8d5a5a;
+  --theme-elevation-500: #754141;
+  --theme-elevation-600: #5f3030;
+  --theme-elevation-700: #492121;
+  --theme-elevation-800: #351414;
+  --theme-elevation-900: #240d0d;
+  --theme-elevation-950: #160808;
+}
+
+body {
+  background: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+.template-minimal,
+.template-default,
+.create-first-user,
+.login {
+  color: var(--theme-text);
+}
+
+.template-minimal h1,
+.template-minimal h2,
+.template-minimal p,
+.template-minimal label,
+.template-minimal .field-label,
+.template-minimal .label,
+.template-default h1,
+.template-default h2,
+.template-default p,
+.template-default label,
+.template-default .field-label,
+.template-default .label {
+  color: var(--theme-text) !important;
+  opacity: 1 !important;
+}
+
+.template-minimal .required,
+.template-minimal .field-required,
+.template-default .required,
+.template-default .field-required {
+  color: #c7392f !important;
+}
+
+.template-minimal input,
+.template-minimal textarea,
+.template-minimal select,
+.template-minimal .rs__control,
+.template-default input,
+.template-default textarea,
+.template-default select,
+.template-default .rs__control {
+  background: var(--theme-input-bg) !important;
+  border-color: rgba(117, 65, 65, 0.45) !important;
+  color: var(--theme-text) !important;
+}
+
+.template-minimal input::placeholder,
+.template-minimal textarea::placeholder,
+.template-default input::placeholder,
+.template-default textarea::placeholder {
+  color: var(--theme-elevation-500) !important;
+}
+
+.template-minimal .rs__single-value,
+.template-minimal .rs__placeholder,
+.template-default .rs__single-value,
+.template-default .rs__placeholder {
+  color: var(--theme-text) !important;
+}
+
+.template-minimal .btn--style-primary,
+.template-default .btn--style-primary {
+  --bg-color: var(--theme-elevation-800);
+  --color: var(--theme-elevation-0);
+  --hover-bg: var(--theme-elevation-700);
+}

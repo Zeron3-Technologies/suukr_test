@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function GiftBanner() {
+export default function GiftBanner({ giftUrl = "https://suukr.myshopify.com/" }: { giftUrl?: string | null }) {
     const clipPath = useMemo(() => {
         const rows = 12; // Number of jagged teeth on each side
         const teethDepth = 24; // Pixel depth of teeth
@@ -45,7 +45,7 @@ export default function GiftBanner() {
 
                 {/* Background Pattern - Low opacity dessert icons */}
                 <div
-                    className="absolute inset-0 z-0 bg-[url('/images/dessert_pattern.png')] bg-cover bg-center opacity-10 mix-blend-lighten"
+                    className="absolute inset-0 z-0 bg-[url('https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778278/suukr/site-assets/dessert-pattern.jpg')] bg-cover bg-center opacity-10 mix-blend-lighten"
                 ></div>
 
                 {/* Content Container with Golden Ratio spacing */}
@@ -80,7 +80,7 @@ export default function GiftBanner() {
                             </span>
                             <div className="relative w-[140px] h-[140px]">
                                 <Image
-                                    src="/images/pointing-hand.png"
+                                    src="https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778709/suukr/site-assets/pointing-hand.png"
                                     alt="Pointing Hand"
                                     fill
                                     className="object-contain"
@@ -89,7 +89,7 @@ export default function GiftBanner() {
                         </motion.div>
 
                         <button
-                            onClick={() => window.open("https://suukr.myshopify.com/", "_blank")}
+                            onClick={() => window.open(giftUrl || "https://suukr.myshopify.com/", "_blank")}
                             className="group w-[100px] h-[100px] sm:w-[140px] sm:h-[140px] md:w-[180px] md:h-[180px] bg-[#D5AF34] rounded-full flex flex-col items-center justify-center text-white font-sans transition-all duration-300 ease-out hover:scale-105 hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)] active:scale-95 cursor-pointer shadow-lg min-w-[44px] min-h-[44px]"
                             aria-label="Purchase E-Gift Card"
                         >

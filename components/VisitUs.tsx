@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { DEFAULT_LOCATION, type PublicLocationData } from "@/lib/publicDefaults";
 
-export default function VisitUs() {
+export default function VisitUs({ location = DEFAULT_LOCATION }: { location?: PublicLocationData }) {
     return (
         <section id="contact-us" className="relative py-16 sm:py-24 w-full bg-[#FEF2F2] flex flex-col items-center overflow-hidden z-10">
             {/* Background elegant curve decoration */}
@@ -37,13 +38,13 @@ export default function VisitUs() {
 
                 {/* Map Box */}
                 <a 
-                    href="https://maps.app.goo.gl/vCjQtX4E4naZ97qR9"
+                    href={location.directionsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative w-full lg:w-[550px] xl:w-[600px] h-[300px] sm:h-[400px] lg:h-[600px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg flex-shrink-0 z-10 block group"
                 >
                     <Image
-                        src="/images/satellite_map.jpg"
+                        src={location.mapImageUrl}
                         fill
                         sizes="(max-width: 1024px) 95vw, 600px"
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -72,25 +73,27 @@ export default function VisitUs() {
 
                         <div className="mb-4 sm:mb-6">
                             <h4 className="text-deepRed font-heading font-bold text-lg md:text-xl mb-3 sm:mb-4">Opening Hours</h4>
-                            <p className="text-deepRed/80 font-body text-sm sm:text-base md:text-[17px] mb-1 tracking-wide font-medium">Monday – Friday: 11:00 AM – 8:30 PM</p>
-                            <p className="text-deepRed/80 font-body text-sm sm:text-base md:text-[17px] mb-1 tracking-wide font-medium">Saturday: 9:00 AM – 9:00 PM</p>
-                            <p className="text-deepRed/80 font-body text-sm sm:text-base md:text-[17px] tracking-wide font-medium">Sunday: 9:00 AM – 8:00 PM</p>
+                            {location.hours.map((entry) => (
+                                <p key={entry.day} className="text-deepRed/80 font-body text-sm sm:text-base md:text-[17px] mb-1 tracking-wide font-medium">
+                                    {entry.day}: {entry.hours}
+                                </p>
+                            ))}
                         </div>
 
                         <div className="w-full h-px bg-[#721011]/20 mb-4 sm:mb-6"></div>
 
                         <div>
                             <h4 className="text-deepRed font-heading font-bold text-lg md:text-xl mb-3 sm:mb-4">Location</h4>
-                            <p className="text-deepRed/80 font-body text-sm sm:text-base md:text-[17px] mb-1 tracking-wide font-medium">Opp. Woolworths,</p>
-                            <p className="text-deepRed/80 font-body text-sm sm:text-base md:text-[17px] mb-1 tracking-wide font-medium">K2/30 Severn Vale Dr,</p>
-                            <p className="text-deepRed/80 font-body text-sm sm:text-base md:text-[17px] tracking-wide font-medium">Kellyville NSW 2155</p>
+                            {location.addressLines.map((line) => (
+                                <p key={line} className="text-deepRed/80 font-body text-sm sm:text-base md:text-[17px] mb-1 tracking-wide font-medium">{line}</p>
+                            ))}
                         </div>
 
                     </div>
 
                     {/* Get Directions Button */}
                     <a
-                        href="https://maps.app.goo.gl/vCjQtX4E4naZ97qR9"
+                        href={location.directionsUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-8 sm:mt-12 px-8 sm:px-10 py-4 sm:py-5 bg-[#721011] text-[#FEF2F2] font-heading text-center font-bold text-lg sm:text-xl md:text-2xl rounded-xl sm:rounded-2xl shadow-lg transition-transform hover:scale-105 active:scale-95 w-full sm:w-auto min-h-[44px] block"

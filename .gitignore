@@ -4,3 +4,6 @@ public/images/venv/
 .env
 .DS_Store
 instructions.md
+payload.db*
+tsconfig.tsbuildinfo
+media/

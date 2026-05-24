@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 type Product = {
-    id: number;
+    id: number | string;
     name: string;
     description: string;
     image: string;
@@ -17,42 +17,42 @@ const products: Product[] = [
         id: 1,
         name: "Vanilla Cold Foam Cold Brew",
         description: "Slow-steeped & topped with sweet vanilla cold foam",
-        image: "/images/SUUKR_vanilla cold foam cold brew_2880x2304.jpg",
+        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778318/suukr/site-assets/suukr-vanilla-cold-foam-cold-brew-2880x2304.jpg",
         tag: "Fan Favourite",
     },
     {
         id: 2,
         name: "Strawberry Cream Waffle",
         description: "Crispy waffle topped with fresh strawberries & whipped cream",
-        image: "/images/SUUKR_straberry with cream waffle_2880x2304.jpg",
+        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778273/suukr/site-assets/suukr-straberry-with-cream-waffle-2880x2304.jpg",
         tag: "Signature",
     },
     {
         id: 3,
         name: "Cookie Monster Shake",
         description: "Oreo cookies, blue spirulina & sprinkles",
-        image: "/images/SUUKR_blue cookie monster shake_2880x2304.jpg",
+        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778109/suukr/site-assets/suukr-blue-cookie-monster-shake-2880x2304.jpg",
         tag: "Bestseller",
     },
     {
         id: 4,
         name: "Pistachio Knafeh",
         description: "Sweet, cheesy, golden crunch with rich pistachio",
-        image: "/images/SUUKR_kanafeh pistachio_2880x2304.jpg",
+        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778193/suukr/site-assets/suukr-kanafeh-pistachio-2880x2304.jpg",
         tag: "New",
     },
     {
         id: 5,
         name: "Italian Hot Chocolate",
         description: "Thick creamy dark hot chocolate",
-        image: "/images/SUUKR_italian hot chocolate_2880x2304.jpg",
+        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778106/suukr/site-assets/suukr-italian-hot-chocolate-2880x2304.jpg",
         tag: "Chef's Pick",
     },
 ];
 
-export default function ProductCarousel() {
+export default function ProductCarousel({ items = products }: { items?: Product[] }) {
     const [activeIndex, setActiveIndex] = useState(0);
-    const total = products.length;
+    const total = items.length;
 
     const handleNext = useCallback(() => {
         setActiveIndex((prev) => (prev + 1) % total);
@@ -154,7 +154,7 @@ export default function ProductCarousel() {
 
             {/* Carousel */}
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px] flex items-center justify-center">
-                {products.map((product, index) => {
+                {items.map((product, index) => {
                     const cfg = getConfig(index);
                     if (!cfg) return null;
 

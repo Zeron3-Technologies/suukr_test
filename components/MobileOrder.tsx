@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { ORDER_NOW_URL } from "@/lib/links";
 
 export default function MobileOrder() {
     return (
@@ -48,7 +49,7 @@ export default function MobileOrder() {
                             className="relative w-full h-full drop-shadow-2xl"
                         >
                             <Image
-                                src="/images/iphone_mockup2.png"
+                                src="https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778280/suukr/site-assets/iphone-mockup2.png"
                                 fill
                                 sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw, 600px"
                                 className="object-contain scale-x-[-1]"
@@ -64,7 +65,10 @@ export default function MobileOrder() {
                     <h3 className="text-[#FEF2F2] font-heading font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight md:leading-snug mb-6 sm:mb-8 md:mb-10 tracking-wide max-w-md">
                         Your favorite desserts are just one click away. Order now and enjoy the sweetness of Suukr.
                     </h3>
-                    <button className="px-8 sm:px-10 py-3 sm:py-4 bg-[#FEF2F2] text-[#721011] font-heading font-bold text-lg sm:text-xl rounded-full shadow-lg transition-transform hover:scale-105 active:scale-95 cursor-pointer min-h-[44px] w-full sm:w-auto max-w-xs">
+                    <button
+                        onClick={() => window.open(ORDER_NOW_URL, "_blank")}
+                        className="px-8 sm:px-10 py-3 sm:py-4 bg-[#FEF2F2] text-[#721011] font-heading font-bold text-lg sm:text-xl rounded-full shadow-lg transition-transform hover:scale-105 active:scale-95 cursor-pointer min-h-[44px] w-full sm:w-auto max-w-xs"
+                    >
                         Order Now
                     </button>
                 </div>

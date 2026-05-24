@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import { DEFAULT_HOME_HERO, DEFAULT_SITE, type PublicHeroData, type PublicSiteData } from "@/lib/publicDefaults";
 
 /* ── Wave-ripple button ─────────────────────────────────────── */
 export function WaveButton({
@@ -74,16 +75,24 @@ export function WaveButton({
 }
 
 /* ── Hero ───────────────────────────────────────────────────── */
-export default function Hero() {
+type HeroProps = {
+    hero?: PublicHeroData;
+    site?: PublicSiteData;
+};
+
+export default function Hero({ hero = DEFAULT_HOME_HERO, site = DEFAULT_SITE }: HeroProps) {
     const router = useRouter();
-    const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+    const [prefersReducedMotion, setPrefersReducedMotion] = useState(() =>
+        typeof window === "undefined"
+            ? false
+            : window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    );
 
     const { scrollY } = useScroll();
     const imageY = useTransform(scrollY, [0, 600], [0, 120]);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-        setPrefersReducedMotion(mediaQuery.matches);
         const handleChange = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
         mediaQuery.addEventListener("change", handleChange);
         return () => mediaQuery.removeEventListener("change", handleChange);
@@ -91,7 +100,12 @@ export default function Hero() {
 
     return (
         <section className="relative w-full min-h-[110vh] flex flex-col items-center justify-center overflow-hidden">
-            <Navbar />
+            <Navbar
+                brandName={site.brandName}
+                navigation={site.navigation}
+                orderLabel={site.orderLabel}
+                orderUrl={site.orderUrl}
+            />
 
             {/* ── Background image with parallax ── */}
             <motion.div
@@ -99,8 +113,8 @@ export default function Hero() {
                 style={{ y: prefersReducedMotion ? 0 : imageY }}
             >
                 <Image
-                    src="/images/SUUKR_hero_2880x2304.jpg"
-                    alt="Suukr Hero"
+                    src={hero.imageUrl}
+                    alt={hero.heading}
                     fill
                     priority
                     className="object-cover"
@@ -126,7 +140,7 @@ export default function Hero() {
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     className="font-body font-light text-xs sm:text-sm tracking-[0.28em] uppercase text-deepRed mb-5 sm:mb-6"
                 >
-                    Frozen Yogurt · Shakes · Waffles · Cold Brew
+                    {hero.eyebrow}
                 </motion.p>
 
                 {/* Main heading */}
@@ -136,7 +150,12 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
                     className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-deepRed font-semibold mb-6 sm:mb-8 tracking-tight leading-tight"
                 >
-                    Sweet Moments.<br />Always
+                    {hero.heading.split("\n").map((line, index) => (
+                        <span key={line}>
+                            {index > 0 && <br />}
+                            {line}
+                        </span>
+                    ))}
                 </motion.h1>
 
                 {/* CTA */}
@@ -147,11 +166,18 @@ export default function Hero() {
                     className="flex justify-center"
                 >
                     <WaveButton
-                        onClick={() => router.push('/menu')}
+                        onClick={() => {
+                            const href = hero.primaryCTA?.url || "/menu";
+                            if (hero.primaryCTA?.openInNewTab || href.startsWith("http")) {
+                                window.open(href, "_blank");
+                            } else {
+                                router.push(href);
+                            }
+                        }}
                         color="#FFDEDE"
                         waveColor="#c45c5c"
                         textColor="#721011"
-                        label="View Menu"
+                        label={hero.primaryCTA?.label || "View Menu"}
                         className="px-8 sm:px-10 py-3 sm:py-4 text-sm sm:text-base min-h-[44px] tracking-wide"
                     />
                 </motion.div>

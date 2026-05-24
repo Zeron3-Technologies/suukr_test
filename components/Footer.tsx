@@ -1,20 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { useState } from "react";
+import { DEFAULT_LOCATION, DEFAULT_SITE, type PublicLocationData, type PublicSiteData } from "@/lib/publicDefaults";
 
 const containerVariants = {
     hidden: {},
     show: { transition: { staggerChildren: 0.07 } }
 };
 
-const letterVariants: any = {
+const letterVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 20 } }
 };
 
-export default function Footer() {
-    const logo = "SUÜKR";
+export default function Footer({
+    location = DEFAULT_LOCATION,
+    site = DEFAULT_SITE,
+}: {
+    location?: PublicLocationData;
+    site?: PublicSiteData;
+}) {
+    const logo = site.brandName;
     const [formData, setFormData] = useState({
         firstName: '',
         mobile: '',
@@ -43,7 +51,7 @@ export default function Footer() {
             <div
                 className="absolute inset-0 z-0 pointer-events-none"
                 style={{
-                    backgroundImage: "url('/images/dessert_pattern.png')",
+                    backgroundImage: "url('https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778278/suukr/site-assets/dessert-pattern.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: 0.08
@@ -89,7 +97,7 @@ export default function Footer() {
                             We only email when it’s delicious. Promise.
 
                             <br></br>
-                            Sign up for exclusive drops and birthday "treat yourself" moments.
+                            Sign up for exclusive drops and birthday &quot;treat yourself&quot; moments.
                         </p>
                     </div>
 
@@ -188,19 +196,19 @@ export default function Footer() {
                             Visit Us
                         </p>
                         <p className="text-[#FEF2F2]/90 font-medium text-base sm:text-lg max-w-md mb-6 leading-relaxed">
-                            Opp. Woolworths,<br />
-                            K2/30 Severn Vale Dr,<br />
-                            Kellyville NSW 2155
+                            {location.addressLines.map((line) => (
+                                <span key={line}>{line}<br /></span>
+                            ))}
                         </p>
 
                         <div className="text-[#FEF2F2]/80 font-medium text-sm sm:text-base mb-8 space-y-1">
-                            <p>Monday – Friday: <span className="text-[#D5AF34]">11:00 AM – 8:30 PM</span></p>
-                            <p>Saturday: <span className="text-[#D5AF34]">9:00 AM – 9:00 PM</span></p>
-                            <p>Sunday: <span className="text-[#D5AF34]">9:00 AM – 8:00 PM</span></p>
+                            {location.hours.map((entry) => (
+                                <p key={entry.day}>{entry.day}: <span className="text-[#D5AF34]">{entry.hours}</span></p>
+                            ))}
                         </div>
 
                         <motion.a
-                            href="https://maps.app.goo.gl/AFaR8rVB4tXKmDH49"
+                            href={location.directionsUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
@@ -229,7 +237,7 @@ export default function Footer() {
                             ].map((icon, idx) => (
                                 <motion.a
                                     key={idx}
-                                    href="https://www.instagram.com/suukr.au?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                    href={site.instagramUrl || DEFAULT_SITE.instagramUrl || "https://www.instagram.com/suukr.au"}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     whileHover={{ y: -6, scale: 1.1 }}
@@ -249,7 +257,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <p className="relative z-10 font-body text-[#FEF2F2]/60 text-xs sm:text-sm tracking-wide text-center px-4">
-                © 2026 Suükr. All rights reserved.
+                © 2026 {site.brandName}. All rights reserved.
             </p>
 
         </footer>
