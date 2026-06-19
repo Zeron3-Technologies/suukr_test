@@ -175,14 +175,12 @@ export interface Media {
   alt: string;
   caption?: string | null;
   /**
-   * Public HTTPS asset URL returned by Cloudinary.
+   * Public HTTPS asset URL returned by ImageKit.
    */
-  cloudinarySecureUrl?: string | null;
-  cloudinaryUrl?: string | null;
-  cloudinaryPublicId?: string | null;
-  cloudinaryResourceType?: string | null;
-  cloudinaryVersion?: string | null;
-  uploadedToCloudinaryAt?: string | null;
+  imagekitUrl?: string | null;
+  imagekitFileId?: string | null;
+  imagekitFilePath?: string | null;
+  uploadedToImageKitAt?: string | null;
   uploadSource?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -453,12 +451,10 @@ export interface UsersSelect<T extends boolean = true> {
 export interface MediaSelect<T extends boolean = true> {
   alt?: T;
   caption?: T;
-  cloudinarySecureUrl?: T;
-  cloudinaryUrl?: T;
-  cloudinaryPublicId?: T;
-  cloudinaryResourceType?: T;
-  cloudinaryVersion?: T;
-  uploadedToCloudinaryAt?: T;
+  imagekitUrl?: T;
+  imagekitFileId?: T;
+  imagekitFilePath?: T;
+  uploadedToImageKitAt?: T;
   uploadSource?: T;
   updatedAt?: T;
   createdAt?: T;

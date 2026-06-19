@@ -51,7 +51,7 @@ export default function Footer({
             <div
                 className="absolute inset-0 z-0 pointer-events-none"
                 style={{
-                    backgroundImage: "url('https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778278/suukr/site-assets/dessert-pattern.jpg')",
+                    backgroundImage: "url('https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/dessert_pattern_bNO6czGFL.png')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: 0.08

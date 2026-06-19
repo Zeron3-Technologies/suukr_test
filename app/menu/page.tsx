@@ -4,7 +4,7 @@ import { getLocationData, getSiteData } from "@/lib/publicContent";
 import type { Media, MenuCategory, MenuItem } from "@/payload-types";
 
 const FALLBACK_IMAGE =
-  "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778702/suukr/site-assets/menu/no-image.png";
+  "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/no-image_YpnG7-VaB.png";
 
 export const dynamic = "force-dynamic";
 
@@ -25,7 +25,7 @@ const getImageUrl = (item: MenuItem) => {
 
   if (typeof image === "object" && image !== null) {
     const media = image as Media;
-    return media.cloudinarySecureUrl || media.url || FALLBACK_IMAGE;
+    return media.imagekitUrl || media.url || FALLBACK_IMAGE;
   }
 
   return FALLBACK_IMAGE;

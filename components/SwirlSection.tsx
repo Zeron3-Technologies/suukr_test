@@ -8,17 +8,17 @@ const baseFlavours = [
     {
         name: "Summer Mango",
         desc: "Perfect for summer",
-        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778335/suukr/site-assets/mango-froyo.png"
+        image: "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/mango_froyo_DV7h-3x21.png"
     },
     {
         name: "Classic Vanilla",
         desc: "Light and heavenly",
-        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778830/suukr/site-assets/vanilla-froyo.png"
+        image: "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/vanilla_froyo_RHNDNPRDg.png"
     },
     {
         name: "Fresh Strawberry",
         desc: "Seasonal sweet",
-        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778794/suukr/site-assets/strawberry-froyo.png"
+        image: "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/strawberry_froyo_e-OevDF85.png"
     }
 ];
 

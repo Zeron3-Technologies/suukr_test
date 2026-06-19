@@ -3,9 +3,7 @@ import type {
   CollectionBeforeChangeHook,
   CollectionConfig,
 } from 'payload'
-import { Readable } from 'node:stream'
-
-import { v2 as cloudinary, type UploadApiResponse } from 'cloudinary'
+import ImageKit, { toFile } from '@imagekit/nodejs'
 
 import { anyone, authenticated } from '@/lib/access'
 
@@ -16,100 +14,82 @@ type UploadFile = {
 }
 
 type MediaDocument = {
-  cloudinaryPublicId?: string
-  cloudinaryResourceType?: string
+  imagekitFileId?: string
+  imagekitFilePath?: string
+  imagekitUrl?: string
 }
 
-const hasCloudinaryConfig = () =>
+const hasImageKitConfig = () =>
   Boolean(
-    process.env.CLOUDINARY_CLOUD_NAME &&
-      process.env.CLOUDINARY_API_KEY &&
-      process.env.CLOUDINARY_API_SECRET,
+    process.env.IMAGEKIT_PUBLIC_KEY &&
+      process.env.IMAGEKIT_PRIVATE_KEY &&
+      process.env.IMAGEKIT_URL_ENDPOINT,
   )
 
-const configureCloudinary = () => {
-  cloudinary.config({
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET,
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-    secure: true,
+const getImageKitClient = () => {
+  return new ImageKit({
+    privateKey: process.env.IMAGEKIT_PRIVATE_KEY!,
   })
 }
 
-const uploadToCloudinary = (
+const uploadToImageKit = async (
   file: UploadFile,
   folder: string,
-): Promise<UploadApiResponse> =>
-  new Promise((resolve, reject) => {
-    if (!file.data) {
-      reject(new Error('No file buffer was provided for Cloudinary upload.'))
-      return
-    }
+): Promise<any> => {
+  if (!file.data) {
+    throw new Error('No file buffer was provided for ImageKit upload.')
+  }
 
-    const uploadStream = cloudinary.uploader.upload_stream(
-      {
-        folder,
-        resource_type: 'auto',
-        use_filename: true,
-        unique_filename: true,
-      },
-      (error, result) => {
-        if (error || !result) {
-          reject(error ?? new Error('Cloudinary did not return an upload result.'))
-          return
-        }
+  const imagekit = getImageKitClient()
+  const folderPath = folder.startsWith('/') ? folder : `/${folder}`
+  const fileName = file.name || 'unnamed-file'
+  const formattedFile = await toFile(Buffer.from(file.data), fileName)
 
-        resolve(result)
-      },
-    )
-
-    Readable.from(Buffer.from(file.data)).pipe(uploadStream)
+  return imagekit.files.upload({
+    file: formattedFile,
+    fileName,
+    folder: folderPath,
   })
+}
 
-const syncToCloudinary: CollectionBeforeChangeHook = async ({ data, req, operation }) => {
+
+const syncToImageKit: CollectionBeforeChangeHook = async ({ data, req, operation }) => {
   const file = (req as { file?: UploadFile }).file
 
-  if (!file?.data || !hasCloudinaryConfig()) {
+  if (!file?.data || !hasImageKitConfig()) {
     return data
   }
 
-  configureCloudinary()
-
-  const result = await uploadToCloudinary(
+  const result = await uploadToImageKit(
     file,
-    process.env.CLOUDINARY_FOLDER || 'suukr',
+    process.env.IMAGEKIT_FOLDER || 'suukr',
   )
 
   return {
     ...data,
-    cloudinaryPublicId: result.public_id,
-    cloudinaryResourceType: result.resource_type,
-    cloudinarySecureUrl: result.secure_url,
-    cloudinaryUrl: result.url,
-    cloudinaryVersion: String(result.version),
-    uploadedToCloudinaryAt: new Date().toISOString(),
+    imagekitFileId: result.fileId,
+    imagekitFilePath: result.filePath,
+    imagekitUrl: result.url,
+    uploadedToImageKitAt: new Date().toISOString(),
     uploadSource: operation === 'create' ? 'payload-create' : 'payload-update',
   }
 }
 
-const deleteFromCloudinary: CollectionAfterDeleteHook = async ({ doc }) => {
+const deleteFromImageKit: CollectionAfterDeleteHook = async ({ doc }) => {
   const media = doc as MediaDocument
 
-  if (!media.cloudinaryPublicId || !hasCloudinaryConfig()) {
+  if (!media.imagekitFileId || !hasImageKitConfig()) {
     return
   }
 
-  configureCloudinary()
-
-  await cloudinary.uploader.destroy(media.cloudinaryPublicId, {
-    resource_type: media.cloudinaryResourceType || 'image',
-  })
+  const imagekit = getImageKitClient()
+  await imagekit.files.delete(media.imagekitFileId)
 }
 
 export const Media: CollectionConfig = {
   slug: 'media',
   admin: {
-    defaultColumns: ['filename', 'alt', 'cloudinarySecureUrl', 'updatedAt'],
+    defaultColumns: ['filename', 'alt', 'imagekitUrl', 'updatedAt'],
     group: 'Assets',
     useAsTitle: 'alt',
   },
@@ -151,53 +131,37 @@ export const Media: CollectionConfig = {
       type: 'textarea',
     },
     {
-      name: 'cloudinarySecureUrl',
+      name: 'imagekitUrl',
       type: 'text',
       admin: {
-        description: 'Public HTTPS asset URL returned by Cloudinary.',
+        description: 'Public HTTPS asset URL returned by ImageKit.',
         readOnly: true,
       },
-      label: 'Cloudinary Secure URL',
+      label: 'ImageKit URL',
     },
     {
-      name: 'cloudinaryUrl',
-      type: 'text',
-      admin: {
-        readOnly: true,
-      },
-      label: 'Cloudinary URL',
-    },
-    {
-      name: 'cloudinaryPublicId',
+      name: 'imagekitFileId',
       type: 'text',
       admin: {
         readOnly: true,
       },
-      label: 'Cloudinary Public ID',
+      label: 'ImageKit File ID',
     },
     {
-      name: 'cloudinaryResourceType',
+      name: 'imagekitFilePath',
       type: 'text',
       admin: {
         readOnly: true,
       },
-      label: 'Cloudinary Resource Type',
+      label: 'ImageKit File Path',
     },
     {
-      name: 'cloudinaryVersion',
-      type: 'text',
-      admin: {
-        readOnly: true,
-      },
-      label: 'Cloudinary Version',
-    },
-    {
-      name: 'uploadedToCloudinaryAt',
+      name: 'uploadedToImageKitAt',
       type: 'date',
       admin: {
         readOnly: true,
       },
-      label: 'Uploaded to Cloudinary At',
+      label: 'Uploaded to ImageKit At',
     },
     {
       name: 'uploadSource',
@@ -208,7 +172,7 @@ export const Media: CollectionConfig = {
     },
   ],
   hooks: {
-    afterDelete: [deleteFromCloudinary],
-    beforeChange: [syncToCloudinary],
+    afterDelete: [deleteFromImageKit],
+    beforeChange: [syncToImageKit],
   },
 }

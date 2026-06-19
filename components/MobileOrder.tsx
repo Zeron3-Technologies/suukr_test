@@ -49,7 +49,7 @@ export default function MobileOrder() {
                             className="relative w-full h-full drop-shadow-2xl"
                         >
                             <Image
-                                src="https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778280/suukr/site-assets/iphone-mockup2.png"
+                                src="https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/iphone_mockup2_RY8nU9cOc.png"
                                 fill
                                 sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw, 600px"
                                 className="object-contain scale-x-[-1]"

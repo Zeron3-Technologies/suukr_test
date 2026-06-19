@@ -27,7 +27,7 @@ export { DEFAULT_HOME_HERO, DEFAULT_LOCATION, DEFAULT_SITE }
 
 export const getMediaUrl = (media?: (number | null) | Media) => {
   if (typeof media === 'object' && media !== null) {
-    return media.cloudinarySecureUrl || media.url || undefined
+    return media.imagekitUrl || media.url || undefined
   }
 
   return undefined
@@ -35,7 +35,7 @@ export const getMediaUrl = (media?: (number | null) | Media) => {
 
 export const getMenuItemImageUrl = (item: MenuItem) =>
   item.imageUrl || getMediaUrl(item.image) ||
-  'https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778702/suukr/site-assets/menu/no-image.png'
+  'https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/no-image_YpnG7-VaB.png'
 
 const toPublicLink = (link: PublicLink | undefined | null): PublicLink | undefined =>
   link?.label && link?.url

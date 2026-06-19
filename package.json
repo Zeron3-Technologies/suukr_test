@@ -14,10 +14,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@imagekit/nodejs": "^7.8.0",
     "@payloadcms/db-sqlite": "^3.84.1",
     "@payloadcms/next": "^3.84.1",
     "@payloadcms/richtext-lexical": "^3.84.1",
-    "cloudinary": "^2.10.0",
     "framer-motion": "^12.38.0",
     "graphql": "^16.14.0",
     "lucide-react": "^1.0.1",

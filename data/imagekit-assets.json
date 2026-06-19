@@ -1,0 +1,450 @@
+{
+  "/images/choco.jpg": {
+    "fileId": "6a356b955c7cd75eb8d14967",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/choco_qt53VLxL_.jpg",
+    "filePath": "/suukr/site-assets/choco_qt53VLxL_.jpg",
+    "width": 640,
+    "height": 640,
+    "size": 57210
+  },
+  "/images/coldbrew.jpg": {
+    "fileId": "6a356b965c7cd75eb8d152d9",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/coldbrew_0G_jwEF9D.jpg",
+    "filePath": "/suukr/site-assets/coldbrew_0G_jwEF9D.jpg",
+    "width": 640,
+    "height": 640,
+    "size": 53016
+  },
+  "/images/dessert_pattern.png": {
+    "fileId": "6a356b975c7cd75eb8d15ec3",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/dessert_pattern_bNO6czGFL.png",
+    "filePath": "/suukr/site-assets/dessert_pattern_bNO6czGFL.png",
+    "width": 640,
+    "height": 640,
+    "size": 76801
+  },
+  "/images/DSC08136.jpg": {
+    "fileId": "6a356b995c7cd75eb8d16daf",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/DSC08136_fBaP4rfns.jpg",
+    "filePath": "/suukr/site-assets/DSC08136_fBaP4rfns.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 1984505
+  },
+  "/images/DSC08200.jpg": {
+    "fileId": "6a356b9c5c7cd75eb8d180a5",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/DSC08200_CzvkEI2il.jpg",
+    "filePath": "/suukr/site-assets/DSC08200_CzvkEI2il.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 3330544
+  },
+  "/images/DSC08238.jpg": {
+    "fileId": "6a356b9f5c7cd75eb8d19d0f",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/DSC08238_8a0h1ytms.jpg",
+    "filePath": "/suukr/site-assets/DSC08238_8a0h1ytms.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 3485684
+  },
+  "/images/DSC08458.jpg": {
+    "fileId": "6a356ba15c7cd75eb8d1b445",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/DSC08458_s4NH6FDUU.jpg",
+    "filePath": "/suukr/site-assets/DSC08458_s4NH6FDUU.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 3420661
+  },
+  "/images/DSC08527.jpg": {
+    "fileId": "6a356ba45c7cd75eb8d1c5b0",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/DSC08527_cSm3OTgEA.jpg",
+    "filePath": "/suukr/site-assets/DSC08527_cSm3OTgEA.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 2936287
+  },
+  "/images/hand_pointing.png": {
+    "fileId": "6a356ba55c7cd75eb8d1d75d",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/hand_pointing_XS3M4V6gP.png",
+    "filePath": "/suukr/site-assets/hand_pointing_XS3M4V6gP.png",
+    "width": 1024,
+    "height": 1024,
+    "size": 366758
+  },
+  "/images/iphone_mockup2.png": {
+    "fileId": "6a356ba65c7cd75eb8d1e5fb",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/iphone_mockup2_RY8nU9cOc.png",
+    "filePath": "/suukr/site-assets/iphone_mockup2_RY8nU9cOc.png",
+    "width": 640,
+    "height": 640,
+    "size": 92473
+  },
+  "/images/mango_froyo.png": {
+    "fileId": "6a356ba95c7cd75eb8d1f80f",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/mango_froyo_DV7h-3x21.png",
+    "filePath": "/suukr/site-assets/mango_froyo_DV7h-3x21.png",
+    "width": 3294,
+    "height": 1312,
+    "size": 1645771
+  },
+  "/images/map_image.png": {
+    "fileId": "6a356baa5c7cd75eb8d205f3",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/map_image_OT2b281e7.png",
+    "filePath": "/suukr/site-assets/map_image_OT2b281e7.png",
+    "width": 640,
+    "height": 640,
+    "size": 79813
+  },
+  "/images/menu/Almond Maple Cold Brew.jpg": {
+    "fileId": "6a356bad5c7cd75eb8d220be",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Almond_Maple_Cold_Brew_IZpPyCNdp.jpg",
+    "filePath": "/suukr/site-assets/menu/Almond_Maple_Cold_Brew_IZpPyCNdp.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 4256459
+  },
+  "/images/menu/Berry Boost.jpg": {
+    "fileId": "6a356baf5c7cd75eb8d23703",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Berry_Boost_d8vdcZfJ2.jpg",
+    "filePath": "/suukr/site-assets/menu/Berry_Boost_d8vdcZfJ2.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 2684446
+  },
+  "/images/menu/Blue Spirulina Protein Shake.jpg": {
+    "fileId": "6a356bb25c7cd75eb8d25bc9",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Blue_Spirulina_Protein_Shake_yX888bhTM.jpg",
+    "filePath": "/suukr/site-assets/menu/Blue_Spirulina_Protein_Shake_yX888bhTM.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 5076630
+  },
+  "/images/menu/Cold Brew.jpg": {
+    "fileId": "6a356bb45c7cd75eb8d270f9",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Cold_Brew_3Hvmk3-Fa.jpg",
+    "filePath": "/suukr/site-assets/menu/Cold_Brew_3Hvmk3-Fa.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 2703927
+  },
+  "/images/menu/Cookie Monster Swirl.jpg": {
+    "fileId": "6a356bb75c7cd75eb8d28850",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Cookie_Monster_Swirl_eVOILpLRk.jpg",
+    "filePath": "/suukr/site-assets/menu/Cookie_Monster_Swirl_eVOILpLRk.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 3420661
+  },
+  "/images/menu/Cookie Monster.jpg": {
+    "fileId": "6a356bb95c7cd75eb8d29e3b",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Cookie_Monster_hZGopk3Is.jpg",
+    "filePath": "/suukr/site-assets/menu/Cookie_Monster_hZGopk3Is.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 3331069
+  },
+  "/images/menu/Golden Gaytime.jpg": {
+    "fileId": "6a356bbc5c7cd75eb8d2b12d",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Golden_Gaytime_zi0UC3yAz.jpg",
+    "filePath": "/suukr/site-assets/menu/Golden_Gaytime_zi0UC3yAz.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 2363434
+  },
+  "/images/menu/Italian Hot Chocolate.jpg": {
+    "fileId": "6a356bbf5c7cd75eb8d2d73b",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Italian_Hot_Chocolate_sYQawcKij.jpg",
+    "filePath": "/suukr/site-assets/menu/Italian_Hot_Chocolate_sYQawcKij.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 3485684
+  },
+  "/images/menu/Knafeh - Pistachio.jpg": {
+    "fileId": "6a356bc35c7cd75eb8d304b3",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Knafeh_-_Pistachio_MQoCu6Ckl.jpg",
+    "filePath": "/suukr/site-assets/menu/Knafeh_-_Pistachio_MQoCu6Ckl.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 4509229
+  },
+  "/images/menu/Mont Blanc.jpg": {
+    "fileId": "6a356bc65c7cd75eb8d31e33",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Mont_Blanc_pUzZ-g-I1.jpg",
+    "filePath": "/suukr/site-assets/menu/Mont_Blanc_pUzZ-g-I1.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 4103974
+  },
+  "/images/menu/Nitro Cold Brew.jpg": {
+    "fileId": "6a356bc95c7cd75eb8d331ee",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Nitro_Cold_Brew_dnLwTsNKF.jpg",
+    "filePath": "/suukr/site-assets/menu/Nitro_Cold_Brew_dnLwTsNKF.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 2440879
+  },
+  "/images/menu/no-image.png": {
+    "fileId": "6a356bca5c7cd75eb8d33ab0",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/no-image_YpnG7-VaB.png",
+    "filePath": "/suukr/site-assets/menu/no-image_YpnG7-VaB.png",
+    "width": 1280,
+    "height": 822,
+    "size": 15421
+  },
+  "/images/menu/Oat & Vanilla Cold Brew.jpg": {
+    "fileId": "6a356bcd5c7cd75eb8d35521",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Oat___Vanilla_Cold_Brew_MOkH62vqN.jpg",
+    "filePath": "/suukr/site-assets/menu/Oat___Vanilla_Cold_Brew_MOkH62vqN.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 4179589
+  },
+  "/images/menu/Pistachio Silk.jpg": {
+    "fileId": "6a356bd05c7cd75eb8d36a28",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Pistachio_Silk_EJuwomcVV.jpg",
+    "filePath": "/suukr/site-assets/menu/Pistachio_Silk_EJuwomcVV.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 2852097
+  },
+  "/images/menu/Purple Power.jpg": {
+    "fileId": "6a356bd35c7cd75eb8d384bd",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Purple_Power_Zc6AvoLVp.jpg",
+    "filePath": "/suukr/site-assets/menu/Purple_Power_Zc6AvoLVp.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 2902345
+  },
+  "/images/menu/Spanish Latte.jpg": {
+    "fileId": "6a356bd55c7cd75eb8d395b9",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Spanish_Latte__a9sWjGJA.jpg",
+    "filePath": "/suukr/site-assets/menu/Spanish_Latte__a9sWjGJA.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 1940784
+  },
+  "/images/menu/Strawberry & Cream Waffle.jpg": {
+    "fileId": "6a356bd65c7cd75eb8d3a3d0",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Strawberry___Cream_Waffle_tcOS3NJD3.jpg",
+    "filePath": "/suukr/site-assets/menu/Strawberry___Cream_Waffle_tcOS3NJD3.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 1304626
+  },
+  "/images/menu/Tiramisu Cold Brew.jpg": {
+    "fileId": "6a356bd95c7cd75eb8d3bff1",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Tiramisu_Cold_Brew_XCbgzSx_s.jpg",
+    "filePath": "/suukr/site-assets/menu/Tiramisu_Cold_Brew_XCbgzSx_s.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 3191466
+  },
+  "/images/menu/Tropical Sky.jpg": {
+    "fileId": "6a356bdc5c7cd75eb8d3d252",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/menu/Tropical_Sky_naS9qx0Rq.jpg",
+    "filePath": "/suukr/site-assets/menu/Tropical_Sky_naS9qx0Rq.jpg",
+    "width": 4200,
+    "height": 2800,
+    "size": 2454260
+  },
+  "/images/milkshake.jpg": {
+    "fileId": "6a356bdd5c7cd75eb8d3dd75",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/milkshake_J3xs8VVdHI.jpg",
+    "filePath": "/suukr/site-assets/milkshake_J3xs8VVdHI.jpg",
+    "width": 640,
+    "height": 640,
+    "size": 60099
+  },
+  "/images/mocha_character.png": {
+    "fileId": "6a356bde5c7cd75eb8d3e82c",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/mocha_character_ASSwlgrHM.png",
+    "filePath": "/suukr/site-assets/mocha_character_ASSwlgrHM.png",
+    "width": 232,
+    "height": 254,
+    "size": 86653
+  },
+  "/images/pointing-hand.png": {
+    "fileId": "6a356be05c7cd75eb8d3f655",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/pointing-hand_I1_iXgIZh.png",
+    "filePath": "/suukr/site-assets/pointing-hand_I1_iXgIZh.png",
+    "width": 500,
+    "height": 500,
+    "size": 70157
+  },
+  "/images/satellite_map.jpg": {
+    "fileId": "6a356be15c7cd75eb8d40405",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/satellite_map_rLFbEA3tC.jpg",
+    "filePath": "/suukr/site-assets/satellite_map_rLFbEA3tC.jpg",
+    "width": 1024,
+    "height": 775,
+    "size": 574238
+  },
+  "/images/softserve.png": {
+    "fileId": "6a356be45c7cd75eb8d41ff2",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/softserve_AH5H7-Tur.png",
+    "filePath": "/suukr/site-assets/softserve_AH5H7-Tur.png",
+    "width": 2240,
+    "height": 1423,
+    "size": 4159456
+  },
+  "/images/strawberry_froyo.png": {
+    "fileId": "6a356be65c7cd75eb8d43709",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/strawberry_froyo_e-OevDF85.png",
+    "filePath": "/suukr/site-assets/strawberry_froyo_e-OevDF85.png",
+    "width": 3294,
+    "height": 1312,
+    "size": 1698846
+  },
+  "/images/SUUKR_biscoff white chocolate waffle_2880x2304.jpg": {
+    "fileId": "6a356be85c7cd75eb8d45299",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_biscoff_white_chocolate_waffle_2880x2304_eyMpxbL-Z.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_biscoff_white_chocolate_waffle_2880x2304_eyMpxbL-Z.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2245908
+  },
+  "/images/SUUKR_blue cookie monster shake_2880x2304.jpg": {
+    "fileId": "6a356bea5c7cd75eb8d47224",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_blue_cookie_monster_shake_2880x2304_0e1sd_aD7.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_blue_cookie_monster_shake_2880x2304_0e1sd_aD7.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2440528
+  },
+  "/images/SUUKR_hero_2880x2304.jpg": {
+    "fileId": "6a356bed5c7cd75eb8d4830d",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_hero_2880x2304_OP2OXN6RT.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_hero_2880x2304_OP2OXN6RT.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2760485
+  },
+  "/images/SUUKR_italian hot chocolate_2880x2304.jpg": {
+    "fileId": "6a356bf05c7cd75eb8d49c49",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_italian_hot_chocolate_2880x2304_4NHgqrgQU.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_italian_hot_chocolate_2880x2304_4NHgqrgQU.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2421043
+  },
+  "/images/SUUKR_kanafeh chocolate_2880x2304.jpg": {
+    "fileId": "6a356bf55c7cd75eb8d4bff5",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_kanafeh_chocolate_2880x2304_tjbPnosAt.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_kanafeh_chocolate_2880x2304_tjbPnosAt.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2241303
+  },
+  "/images/SUUKR_kanafeh classic_2880x2304.jpg": {
+    "fileId": "6a356bf85c7cd75eb8d4cdb3",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_kanafeh_classic_2880x2304_eEO_vqRnt.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_kanafeh_classic_2880x2304_eEO_vqRnt.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2315296
+  },
+  "/images/SUUKR_kanafeh pistachio_2880x2304.jpg": {
+    "fileId": "6a356bfa5c7cd75eb8d4e829",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_kanafeh_pistachio_2880x2304_dFuPjdp3Z.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_kanafeh_pistachio_2880x2304_dFuPjdp3Z.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2256990
+  },
+  "/images/SUUKR_maltease shake_2880x2304.jpg": {
+    "fileId": "6a356bfc5c7cd75eb8d5007f",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_maltease_shake_2880x2304_klBub4KIx.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_maltease_shake_2880x2304_klBub4KIx.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2172858
+  },
+  "/images/SUUKR_pistachio crunch waffle_2880x2304.jpg": {
+    "fileId": "6a356bff5c7cd75eb8d51b7f",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_pistachio_crunch_waffle_2880x2304_xtZiZED5d.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_pistachio_crunch_waffle_2880x2304_xtZiZED5d.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2294889
+  },
+  "/images/SUUKR_pistachio silk shake_2880x2304.jpg": {
+    "fileId": "6a356c035c7cd75eb8d53e4c",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_pistachio_silk_shake_2880x2304_Z4rxj9ao0.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_pistachio_silk_shake_2880x2304_Z4rxj9ao0.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2271907
+  },
+  "/images/SUUKR_straberry rose matcha_2880x2304.jpg": {
+    "fileId": "6a356c065c7cd75eb8d5508c",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_straberry_rose_matcha_2880x2304_pA59vRC_2.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_straberry_rose_matcha_2880x2304_pA59vRC_2.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2110199
+  },
+  "/images/SUUKR_straberry with cream waffle_2880x2304.jpg": {
+    "fileId": "6a356c095c7cd75eb8d56904",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_straberry_with_cream_waffle_2880x2304_2a76LpQei.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_straberry_with_cream_waffle_2880x2304_2a76LpQei.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2412876
+  },
+  "/images/SUUKR_tiramisu cold foam cold brew_2880x2304.jpg": {
+    "fileId": "6a356c0c5c7cd75eb8d57b13",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_tiramisu_cold_foam_cold_brew_2880x2304_4gClMZjdk.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_tiramisu_cold_foam_cold_brew_2880x2304_4gClMZjdk.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 1918046
+  },
+  "/images/SUUKR_tripple chocolate waffle_2880x2304.jpg": {
+    "fileId": "6a356c0f5c7cd75eb8d59d0f",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_tripple_chocolate_waffle_2880x2304_Y10L4MED8.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_tripple_chocolate_waffle_2880x2304_Y10L4MED8.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2271693
+  },
+  "/images/SUUKR_vanilla cold foam cold brew_2880x2304.jpg": {
+    "fileId": "6a356c115c7cd75eb8d5b278",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_vanilla_cold_foam_cold_brew_2880x2304_kqwcgYi_u.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_vanilla_cold_foam_cold_brew_2880x2304_kqwcgYi_u.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 1876794
+  },
+  "/images/SUUKR_vanilla shake_2880x2304.jpg": {
+    "fileId": "6a356c145c7cd75eb8d5c8d2",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_vanilla_shake_2880x2304_-Vi7ZuvDB.jpg",
+    "filePath": "/suukr/site-assets/SUUKR_vanilla_shake_2880x2304_-Vi7ZuvDB.jpg",
+    "width": 2880,
+    "height": 2304,
+    "size": 2299422
+  },
+  "/images/vanilla_froyo.png": {
+    "fileId": "6a356c165c7cd75eb8d5daa9",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/vanilla_froyo_RHNDNPRDg.png",
+    "filePath": "/suukr/site-assets/vanilla_froyo_RHNDNPRDg.png",
+    "width": 3294,
+    "height": 1312,
+    "size": 1557245
+  },
+  "/images/waffles.jpg": {
+    "fileId": "6a356c185c7cd75eb8d5eec2",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/waffles_lT6SPELRc.jpg",
+    "filePath": "/suukr/site-assets/waffles_lT6SPELRc.jpg",
+    "width": 640,
+    "height": 640,
+    "size": 68185
+  },
+  "/images/yogurt.jpg": {
+    "fileId": "6a356c195c7cd75eb8d5f753",
+    "url": "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/yogurt_Dmp03ZrWZ.jpg",
+    "filePath": "/suukr/site-assets/yogurt_Dmp03ZrWZ.jpg",
+    "width": 640,
+    "height": 640,
+    "size": 75026
+  }
+}

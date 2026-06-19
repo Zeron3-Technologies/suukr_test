@@ -45,7 +45,7 @@ export default function GiftBanner({ giftUrl = "https://suukr.myshopify.com/" }:
 
                 {/* Background Pattern - Low opacity dessert icons */}
                 <div
-                    className="absolute inset-0 z-0 bg-[url('https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778278/suukr/site-assets/dessert-pattern.jpg')] bg-cover bg-center opacity-10 mix-blend-lighten"
+                    className="absolute inset-0 z-0 bg-[url('https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/dessert_pattern_bNO6czGFL.png')] bg-cover bg-center opacity-10 mix-blend-lighten"
                 ></div>
 
                 {/* Content Container with Golden Ratio spacing */}
@@ -80,7 +80,7 @@ export default function GiftBanner({ giftUrl = "https://suukr.myshopify.com/" }:
                             </span>
                             <div className="relative w-[140px] h-[140px]">
                                 <Image
-                                    src="https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778709/suukr/site-assets/pointing-hand.png"
+                                    src="https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/pointing-hand_I1_iXgIZh.png"
                                     alt="Pointing Hand"
                                     fill
                                     className="object-contain"

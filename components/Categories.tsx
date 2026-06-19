@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const categories = [
     {
         title: "Desserts",
-        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778314/suukr/site-assets/suukr-tripple-chocolate-waffle-2880x2304.jpg",
+        image: "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_tripple_chocolate_waffle_2880x2304_Y10L4MED8.jpg",
         icon: (
             <svg viewBox="0 0 100 100" className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 mb-8 sm:mb-12" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round">
                 {/* Top pancake */}
@@ -23,7 +23,7 @@ const categories = [
     },
     {
         title: "Self-Serve Frozen Yoghurt",
-        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778898/suukr/site-assets/softserve.png",
+        image: "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/softserve_AH5H7-Tur.png",
         icon: (
             <svg viewBox="0 0 100 100" className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 mb-8 sm:mb-12" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round">
                 {/* Bowl Rim */}
@@ -41,7 +41,7 @@ const categories = [
     },
     {
         title: "Coffee",
-        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778318/suukr/site-assets/suukr-vanilla-cold-foam-cold-brew-2880x2304.jpg",
+        image: "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_vanilla_cold_foam_cold_brew_2880x2304_kqwcgYi_u.jpg",
         icon: (
             <svg viewBox="0 0 100 100" className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 mb-8 sm:mb-12" fill="currentColor">
                 {/* Top Bean */}
@@ -64,7 +64,7 @@ const categories = [
     },
     {
         title: "Shakes",
-        image: "https://res.cloudinary.com/dmzeehrbh/image/upload/v1778778213/suukr/site-assets/suukr-maltease-shake-2880x2304.jpg",
+        image: "https://ik.imagekit.io/3rpgznkyd/suukr/site-assets/SUUKR_maltease_shake_2880x2304_klBub4KIx.jpg",
         icon: (
             <svg viewBox="0 0 100 100" className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 mb-8 sm:mb-12" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round">
                 {/* Cup Bottom */}
